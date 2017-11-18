@@ -11,6 +11,7 @@
 		A100FAD91FC0ABFC00E096B3 /* iOSRootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FAD81FC0ABFC00E096B3 /* iOSRootWireframe.swift */; };
 		A100FADB1FC0ACDE00E096B3 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FADA1FC0ACDE00E096B3 /* Dependencies.swift */; };
 		A100FADE1FC0B27300E096B3 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FADD1FC0B27300E096B3 /* ViewControllerFactory.swift */; };
+		A17910D81FC0DAFA00017E00 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17910D71FC0DAFA00017E00 /* AEXML.framework */; };
 		A18E55761FC06944008C7801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55751FC06944008C7801 /* AppDelegate.swift */; };
 		A18E55781FC06944008C7801 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55771FC06944008C7801 /* MainViewController.swift */; };
 		A18E557B1FC06944008C7801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18E55791FC06944008C7801 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		A100FAD81FC0ABFC00E096B3 /* iOSRootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSRootWireframe.swift; sourceTree = "<group>"; };
 		A100FADA1FC0ACDE00E096B3 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		A100FADD1FC0B27300E096B3 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		A17910D71FC0DAFA00017E00 /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = Carthage/Build/iOS/AEXML.framework; sourceTree = "<group>"; };
 		A18E55721FC06944008C7801 /* ZonaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZonaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18E55751FC06944008C7801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A18E55771FC06944008C7801 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17910D81FC0DAFA00017E00 /* AEXML.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,11 +116,20 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A17910D61FC0DAF900017E00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A17910D71FC0DAFA00017E00 /* AEXML.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A18E55691FC06944008C7801 = {
 			isa = PBXGroup;
 			children = (
 				A18E55741FC06944008C7801 /* ZonaApp */,
 				A18E55731FC06944008C7801 /* Products */,
+				A17910D61FC0DAF900017E00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +305,7 @@
 				A18E556E1FC06944008C7801 /* Sources */,
 				A18E556F1FC06944008C7801 /* Frameworks */,
 				A18E55701FC06944008C7801 /* Resources */,
+				A17910D91FC0DB3B00017E00 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -349,6 +362,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A17910D91FC0DB3B00017E00 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/AEXML.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/AEXML.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A18E556E1FC06944008C7801 /* Sources */ = {
@@ -512,6 +543,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYT82TP5Z4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ZonaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamcreator.Yojanes.ZonaApp;
@@ -527,6 +562,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HYT82TP5Z4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ZonaApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.teamcreator.Yojanes.ZonaApp;
