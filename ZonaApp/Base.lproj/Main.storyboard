@@ -1,24 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ZonaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j8S-VV-n8p" userLabel="InputArea">
+                                <rect key="frame" x="10" y="285.5" width="355" height="116"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sm5-Mv-21B">
+                                        <rect key="frame" x="8" y="36" width="339" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nn0-kw-RZc" userLabel="searchButton">
+                                        <rect key="frame" x="8" y="76" width="339" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="nn0-kw-RZc" firstAttribute="top" secondItem="sm5-Mv-21B" secondAttribute="bottom" constant="10" id="1CY-87-adT"/>
+                                    <constraint firstAttribute="trailing" secondItem="sm5-Mv-21B" secondAttribute="trailing" constant="8" id="7sW-fA-NOB"/>
+                                    <constraint firstItem="nn0-kw-RZc" firstAttribute="leading" secondItem="sm5-Mv-21B" secondAttribute="leading" id="8bw-x6-ueI"/>
+                                    <constraint firstItem="sm5-Mv-21B" firstAttribute="top" secondItem="j8S-VV-n8p" secondAttribute="top" constant="36" id="9kV-AJ-OhS"/>
+                                    <constraint firstItem="sm5-Mv-21B" firstAttribute="leading" secondItem="j8S-VV-n8p" secondAttribute="leading" constant="8" id="UNQ-Og-isO"/>
+                                    <constraint firstAttribute="bottom" secondItem="nn0-kw-RZc" secondAttribute="bottom" constant="10" id="WuW-Xn-pDB"/>
+                                    <constraint firstItem="nn0-kw-RZc" firstAttribute="trailing" secondItem="sm5-Mv-21B" secondAttribute="trailing" id="opv-Pd-AfE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j8S-VV-n8p" secondAttribute="trailing" constant="10" id="FCB-kL-nLU"/>
+                            <constraint firstItem="j8S-VV-n8p" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="rqg-WP-RN1"/>
+                            <constraint firstItem="j8S-VV-n8p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="v78-zO-OTx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="gpsButton" destination="AsP-ga-JWb" id="DTf-uB-VjB"/>
+                        <outlet property="inputArea" destination="j8S-VV-n8p" id="IfZ-ve-VRj"/>
+                        <outlet property="searchButton" destination="nn0-kw-RZc" id="5RG-Y1-ptr"/>
+                        <outlet property="searchTextField" destination="sm5-Mv-21B" id="mkE-WG-wJV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AsP-ga-JWb" userLabel="gpsButton">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xs0-D9-g5y">
+            <objects>
+                <viewController id="Mtl-n9-zYL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pvp-hs-ZrF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eKa-LE-dt6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFt-6T-PcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871" y="72"/>
         </scene>
     </scenes>
 </document>
