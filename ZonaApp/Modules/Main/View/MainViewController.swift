@@ -1,8 +1,14 @@
 import UIKit
 
-class MainViewController<DefaultMainPresenter>: StoryboardView, BaseViewController, UITextFieldDelegate {
+class MainViewController: BaseViewController<DefaultMainPresenter>, UITextFieldDelegate {
 	
-	var lastSearchInput: SearchInputViewModel?
+	override class var storyboardName: String {
+		return "Main"
+	}
+	
+	override class var storyboardIdentifier: String {
+		return "mainViewController"
+	}
 
 	@IBOutlet weak var inputArea: UIView!
 	@IBOutlet weak var searchTextField: UITextField!

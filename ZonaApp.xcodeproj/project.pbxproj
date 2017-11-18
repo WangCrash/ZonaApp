@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A100FAD71FC0AA4800E096B3 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FAD61FC0AA4800E096B3 /* Entity.swift */; };
+		A100FAD91FC0ABFC00E096B3 /* iOSRootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FAD81FC0ABFC00E096B3 /* iOSRootWireframe.swift */; };
+		A100FADB1FC0ACDE00E096B3 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FADA1FC0ACDE00E096B3 /* Dependencies.swift */; };
+		A100FADE1FC0B27300E096B3 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FADD1FC0B27300E096B3 /* ViewControllerFactory.swift */; };
 		A18E55761FC06944008C7801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55751FC06944008C7801 /* AppDelegate.swift */; };
 		A18E55781FC06944008C7801 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55771FC06944008C7801 /* MainViewController.swift */; };
 		A18E557B1FC06944008C7801 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A18E55791FC06944008C7801 /* Main.storyboard */; };
@@ -19,9 +23,19 @@
 		A18E55961FC07BC5008C7801 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55951FC07BC5008C7801 /* MainPresenter.swift */; };
 		A18E559F1FC0A04D008C7801 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E559E1FC0A04D008C7801 /* Interactor.swift */; };
 		A18E55A11FC0A064008C7801 /* Wirteframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55A01FC0A064008C7801 /* Wirteframe.swift */; };
+		A18E55A41FC0A1DF008C7801 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55A31FC0A1DF008C7801 /* RootWireframe.swift */; };
+		A18E55A61FC0A22F008C7801 /* iOSDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55A51FC0A22F008C7801 /* iOSDependencies.swift */; };
+		A18E55A91FC0A2B7008C7801 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55A81FC0A2B7008C7801 /* AppConfiguration.swift */; };
+		A18E55AB1FC0A2CA008C7801 /* AppEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55AA1FC0A2CA008C7801 /* AppEndPoint.swift */; };
+		A18E55AE1FC0A671008C7801 /* NetworkingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55AD1FC0A671008C7801 /* NetworkingProtocols.swift */; };
+		A18E55B01FC0A6F1008C7801 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55AF1FC0A6F1008C7801 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A100FAD61FC0AA4800E096B3 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		A100FAD81FC0ABFC00E096B3 /* iOSRootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSRootWireframe.swift; sourceTree = "<group>"; };
+		A100FADA1FC0ACDE00E096B3 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		A100FADD1FC0B27300E096B3 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		A18E55721FC06944008C7801 /* ZonaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZonaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18E55751FC06944008C7801 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A18E55771FC06944008C7801 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +50,12 @@
 		A18E55951FC07BC5008C7801 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		A18E559E1FC0A04D008C7801 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		A18E55A01FC0A064008C7801 /* Wirteframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wirteframe.swift; sourceTree = "<group>"; };
+		A18E55A31FC0A1DF008C7801 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		A18E55A51FC0A22F008C7801 /* iOSDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSDependencies.swift; sourceTree = "<group>"; };
+		A18E55A81FC0A2B7008C7801 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		A18E55AA1FC0A2CA008C7801 /* AppEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndPoint.swift; sourceTree = "<group>"; };
+		A18E55AD1FC0A671008C7801 /* NetworkingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocols.swift; sourceTree = "<group>"; };
+		A18E55AF1FC0A6F1008C7801 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +69,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A100FADC1FC0B0DA00E096B3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A100FADD1FC0B27300E096B3 /* ViewControllerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		A100FADF1FC0B6C500E096B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A18E55901FC07B46008C7801 /* SearchViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A100FAE01FC0B6CD00E096B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		A100FAE11FC0B6D200E096B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A100FAE21FC0B6D500E096B3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A100FAE31FC0B6DE00E096B3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		A18E55691FC06944008C7801 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				A18E55751FC06944008C7801 /* AppDelegate.swift */,
+				A18E55AC1FC0A62D008C7801 /* Networking */,
 				A18E55871FC073BC008C7801 /* Domain */,
 				A18E558D1FC07AFB008C7801 /* Modules */,
 				A18E55791FC06944008C7801 /* Main.storyboard */,
@@ -82,19 +147,14 @@
 		A18E55871FC073BC008C7801 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A18E55B11FC0A712008C7801 /* Repository */,
+				A18E55A21FC0A1B5008C7801 /* Core */,
 				A18E559D1FC0A035008C7801 /* Protocols */,
 				A18E559C1FC0A01E008C7801 /* Base Objects */,
-				A18E558C1FC076C2008C7801 /* Presenter */,
-				A18E558A1FC073E9008C7801 /* BaseViewController.swift */,
+				A18E55A71FC0A261008C7801 /* Model */,
+				A100FADC1FC0B0DA00E096B3 /* Factories */,
 			);
 			path = Domain;
-			sourceTree = "<group>";
-		};
-		A18E558C1FC076C2008C7801 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
 			sourceTree = "<group>";
 		};
 		A18E558D1FC07AFB008C7801 /* Modules */ = {
@@ -114,8 +174,6 @@
 				A18E55981FC09FCC008C7801 /* Model */,
 				A18E55991FC09FD4008C7801 /* ViewModel */,
 				A18E55971FC09FB5008C7801 /* View */,
-				A18E55951FC07BC5008C7801 /* MainPresenter.swift */,
-				A18E55771FC06944008C7801 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -123,7 +181,11 @@
 		A18E558F1FC07B14008C7801 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				A18E55901FC07B46008C7801 /* SearchViewController.swift */,
+				A100FAE31FC0B6DE00E096B3 /* Interactor */,
+				A100FAE21FC0B6D500E096B3 /* Presenter */,
+				A100FAE11FC0B6D200E096B3 /* Model */,
+				A100FAE01FC0B6CD00E096B3 /* ViewModel */,
+				A100FADF1FC0B6C500E096B3 /* View */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -131,6 +193,7 @@
 		A18E55971FC09FB5008C7801 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A18E55771FC06944008C7801 /* MainViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,6 +215,7 @@
 		A18E559A1FC09FF1008C7801 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A18E55951FC07BC5008C7801 /* MainPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -166,6 +230,7 @@
 		A18E559C1FC0A01E008C7801 /* Base Objects */ = {
 			isa = PBXGroup;
 			children = (
+				A18E558A1FC073E9008C7801 /* BaseViewController.swift */,
 			);
 			path = "Base Objects";
 			sourceTree = "<group>";
@@ -177,8 +242,45 @@
 				A18E55881FC073C7008C7801 /* View.swift */,
 				A18E559E1FC0A04D008C7801 /* Interactor.swift */,
 				A18E55A01FC0A064008C7801 /* Wirteframe.swift */,
+				A100FAD61FC0AA4800E096B3 /* Entity.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A18E55A21FC0A1B5008C7801 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A100FADA1FC0ACDE00E096B3 /* Dependencies.swift */,
+				A18E55A51FC0A22F008C7801 /* iOSDependencies.swift */,
+				A18E55A31FC0A1DF008C7801 /* RootWireframe.swift */,
+				A100FAD81FC0ABFC00E096B3 /* iOSRootWireframe.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A18E55A71FC0A261008C7801 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A18E55A81FC0A2B7008C7801 /* AppConfiguration.swift */,
+				A18E55AA1FC0A2CA008C7801 /* AppEndPoint.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A18E55AC1FC0A62D008C7801 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A18E55AD1FC0A671008C7801 /* NetworkingProtocols.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A18E55B11FC0A712008C7801 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A18E55AF1FC0A6F1008C7801 /* Repository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,13 +355,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A18E55A41FC0A1DF008C7801 /* RootWireframe.swift in Sources */,
+				A18E55AE1FC0A671008C7801 /* NetworkingProtocols.swift in Sources */,
+				A18E55B01FC0A6F1008C7801 /* Repository.swift in Sources */,
+				A18E55AB1FC0A2CA008C7801 /* AppEndPoint.swift in Sources */,
+				A100FAD71FC0AA4800E096B3 /* Entity.swift in Sources */,
 				A18E55931FC07B7F008C7801 /* Presenter.swift in Sources */,
+				A100FADE1FC0B27300E096B3 /* ViewControllerFactory.swift in Sources */,
 				A18E55911FC07B46008C7801 /* SearchViewController.swift in Sources */,
 				A18E55781FC06944008C7801 /* MainViewController.swift in Sources */,
 				A18E558B1FC073E9008C7801 /* BaseViewController.swift in Sources */,
 				A18E55761FC06944008C7801 /* AppDelegate.swift in Sources */,
+				A18E55A91FC0A2B7008C7801 /* AppConfiguration.swift in Sources */,
+				A18E55A61FC0A22F008C7801 /* iOSDependencies.swift in Sources */,
+				A100FADB1FC0ACDE00E096B3 /* Dependencies.swift in Sources */,
 				A18E55A11FC0A064008C7801 /* Wirteframe.swift in Sources */,
 				A18E55961FC07BC5008C7801 /* MainPresenter.swift in Sources */,
+				A100FAD91FC0ABFC00E096B3 /* iOSRootWireframe.swift in Sources */,
 				A18E559F1FC0A04D008C7801 /* Interactor.swift in Sources */,
 				A18E55891FC073C7008C7801 /* View.swift in Sources */,
 			);
