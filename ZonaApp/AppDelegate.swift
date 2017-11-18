@@ -10,12 +10,20 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+	static var shared: AppDelegate!
 	var window: UIWindow?
+	var dependencies: Dependencies!
 
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		// Override point for customization after application launch.
+		AppDelegate.shared = self
+		
+		let config = AppConfiguration(appEndPoint: .production)
+		let window = UIWindow(frame: UIScreen.main.bounds)
+		
+		dependencies = iOSDependencies(appConfiguration: config, window: window)
+		dependencies.rootWireFrame.presentMainView()
+		
 		return true
 	}
 
