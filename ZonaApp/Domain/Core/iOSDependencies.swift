@@ -14,11 +14,15 @@ class iOSDependencies: Dependencies {
 	}()
 	
 	lazy var repository: Repository = {
-		return DefaultRepository()
+		return DefaultRepository(networkManager: networkManager)
 	}()
 	
 	lazy var rootWireFrame: RootWireframe = {
 		return iOSRootWireframe(window: window, dependencies: self)
+	}()
+	
+	private lazy var networkManager: URLSessionManager = {
+		return URLSessionManager(endPoint: appConfiguration.appEndPoint)
 	}()
 	
 	private lazy var factory: Factory = {

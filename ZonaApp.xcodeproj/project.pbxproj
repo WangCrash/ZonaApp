@@ -13,6 +13,12 @@
 		A100FADE1FC0B27300E096B3 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100FADD1FC0B27300E096B3 /* ViewControllerFactory.swift */; };
 		A102A73C1FC1089F00DAAB04 /* GPSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A73B1FC1089F00DAAB04 /* GPSManager.swift */; };
 		A102A73E1FC10AAB00DAAB04 /* iOSGPSManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A73D1FC10AAB00DAAB04 /* iOSGPSManager.swift */; };
+		A102A7411FC1C6D000DAAB04 /* BasicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A7401FC1C6D000DAAB04 /* BasicRequest.swift */; };
+		A102A7461FC1C75100DAAB04 /* XMLContinentsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A7451FC1C75100DAAB04 /* XMLContinentsParser.swift */; };
+		A102A7481FC1C82200DAAB04 /* ContinentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A7471FC1C82200DAAB04 /* ContinentRequest.swift */; };
+		A102A74A1FC1CB3C00DAAB04 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A7491FC1CB3C00DAAB04 /* Continent.swift */; };
+		A102A74C1FC1CC0700DAAB04 /* XMLConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A74B1FC1CC0700DAAB04 /* XMLConverter.swift */; };
+		A102A74E1FC1CE7A00DAAB04 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102A74D1FC1CE7A00DAAB04 /* XMLParser.swift */; };
 		A17910D81FC0DAFA00017E00 /* AEXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17910D71FC0DAFA00017E00 /* AEXML.framework */; };
 		A17910DD1FC0EE9500017E00 /* URLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17910DC1FC0EE9500017E00 /* URLSessionManager.swift */; };
 		A18E55761FC06944008C7801 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55751FC06944008C7801 /* AppDelegate.swift */; };
@@ -33,6 +39,7 @@
 		A18E55AB1FC0A2CA008C7801 /* AppEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55AA1FC0A2CA008C7801 /* AppEndPoint.swift */; };
 		A18E55AE1FC0A671008C7801 /* NetworkingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55AD1FC0A671008C7801 /* NetworkingProtocols.swift */; };
 		A18E55B01FC0A6F1008C7801 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18E55AF1FC0A6F1008C7801 /* Repository.swift */; };
+		A1FAE1011FC1EC0400730379 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FAE1001FC1EC0400730379 /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +49,12 @@
 		A100FADD1FC0B27300E096B3 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		A102A73B1FC1089F00DAAB04 /* GPSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSManager.swift; sourceTree = "<group>"; };
 		A102A73D1FC10AAB00DAAB04 /* iOSGPSManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSGPSManager.swift; sourceTree = "<group>"; };
+		A102A7401FC1C6D000DAAB04 /* BasicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicRequest.swift; sourceTree = "<group>"; };
+		A102A7451FC1C75100DAAB04 /* XMLContinentsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLContinentsParser.swift; sourceTree = "<group>"; };
+		A102A7471FC1C82200DAAB04 /* ContinentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinentRequest.swift; sourceTree = "<group>"; };
+		A102A7491FC1CB3C00DAAB04 /* Continent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
+		A102A74B1FC1CC0700DAAB04 /* XMLConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLConverter.swift; sourceTree = "<group>"; };
+		A102A74D1FC1CE7A00DAAB04 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		A17910D71FC0DAFA00017E00 /* AEXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AEXML.framework; path = Carthage/Build/iOS/AEXML.framework; sourceTree = "<group>"; };
 		A17910DC1FC0EE9500017E00 /* URLSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManager.swift; sourceTree = "<group>"; };
 		A18E55721FC06944008C7801 /* ZonaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZonaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +77,7 @@
 		A18E55AA1FC0A2CA008C7801 /* AppEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndPoint.swift; sourceTree = "<group>"; };
 		A18E55AD1FC0A671008C7801 /* NetworkingProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProtocols.swift; sourceTree = "<group>"; };
 		A18E55AF1FC0A6F1008C7801 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A1FAE1001FC1EC0400730379 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +134,26 @@
 			children = (
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A102A73F1FC1C69100DAAB04 /* Continent */ = {
+			isa = PBXGroup;
+			children = (
+				A102A7471FC1C82200DAAB04 /* ContinentRequest.swift */,
+				A102A7491FC1CB3C00DAAB04 /* Continent.swift */,
+			);
+			path = Continent;
+			sourceTree = "<group>";
+		};
+		A102A7441FC1C73500DAAB04 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				A1FAE1001FC1EC0400730379 /* Protocols.swift */,
+				A102A74B1FC1CC0700DAAB04 /* XMLConverter.swift */,
+				A102A74D1FC1CE7A00DAAB04 /* XMLParser.swift */,
+				A102A7451FC1C75100DAAB04 /* XMLContinentsParser.swift */,
+			);
+			path = Parsers;
 			sourceTree = "<group>";
 		};
 		A17910D61FC0DAF900017E00 /* Frameworks */ = {
@@ -281,8 +315,10 @@
 		A18E55A71FC0A261008C7801 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A102A73F1FC1C69100DAAB04 /* Continent */,
 				A18E55A81FC0A2B7008C7801 /* AppConfiguration.swift */,
 				A18E55AA1FC0A2CA008C7801 /* AppEndPoint.swift */,
+				A102A7401FC1C6D000DAAB04 /* BasicRequest.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,6 +335,7 @@
 		A18E55B11FC0A712008C7801 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				A102A7441FC1C73500DAAB04 /* Parsers */,
 				A18E55AF1FC0A6F1008C7801 /* Repository.swift */,
 			);
 			path = Repository;
@@ -395,22 +432,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A102A74E1FC1CE7A00DAAB04 /* XMLParser.swift in Sources */,
 				A18E55A41FC0A1DF008C7801 /* RootWireframe.swift in Sources */,
 				A102A73C1FC1089F00DAAB04 /* GPSManager.swift in Sources */,
 				A18E55AE1FC0A671008C7801 /* NetworkingProtocols.swift in Sources */,
 				A18E55B01FC0A6F1008C7801 /* Repository.swift in Sources */,
+				A1FAE1011FC1EC0400730379 /* Protocols.swift in Sources */,
+				A102A7481FC1C82200DAAB04 /* ContinentRequest.swift in Sources */,
 				A18E55AB1FC0A2CA008C7801 /* AppEndPoint.swift in Sources */,
 				A17910DD1FC0EE9500017E00 /* URLSessionManager.swift in Sources */,
 				A102A73E1FC10AAB00DAAB04 /* iOSGPSManager.swift in Sources */,
 				A100FAD71FC0AA4800E096B3 /* Entity.swift in Sources */,
+				A102A7411FC1C6D000DAAB04 /* BasicRequest.swift in Sources */,
+				A102A74A1FC1CB3C00DAAB04 /* Continent.swift in Sources */,
 				A18E55931FC07B7F008C7801 /* Presenter.swift in Sources */,
 				A100FADE1FC0B27300E096B3 /* ViewControllerFactory.swift in Sources */,
 				A18E55911FC07B46008C7801 /* SearchViewController.swift in Sources */,
 				A18E55781FC06944008C7801 /* MainViewController.swift in Sources */,
 				A18E558B1FC073E9008C7801 /* BaseViewController.swift in Sources */,
 				A18E55761FC06944008C7801 /* AppDelegate.swift in Sources */,
+				A102A74C1FC1CC0700DAAB04 /* XMLConverter.swift in Sources */,
 				A18E55A91FC0A2B7008C7801 /* AppConfiguration.swift in Sources */,
 				A18E55A61FC0A22F008C7801 /* iOSDependencies.swift in Sources */,
+				A102A7461FC1C75100DAAB04 /* XMLContinentsParser.swift in Sources */,
 				A100FADB1FC0ACDE00E096B3 /* Dependencies.swift in Sources */,
 				A18E55A11FC0A064008C7801 /* Wirteframe.swift in Sources */,
 				A18E55961FC07BC5008C7801 /* MainPresenter.swift in Sources */,
