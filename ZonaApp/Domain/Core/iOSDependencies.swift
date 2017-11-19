@@ -9,6 +9,10 @@ class iOSDependencies: Dependencies {
 		self.window = window
 	}
 	
+	lazy var gpsManager: GPSManager = {
+		return iOSGPSManager()
+	}()
+	
 	lazy var repository: Repository = {
 		return DefaultRepository()
 	}()
